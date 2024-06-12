@@ -1,0 +1,10 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello this is module hero</string>
+    <string name="localized_name">name hero</string>
+    <string name="primary_attr">primary attribute</string>
+    <string name="attack_type">attack type</string>
+    <string name="roles">Roles</string>
+    <string name="go_to_detail_hero_activity">Go to Detail Hero Activity</string>
+    <string name="hero_activity">Hero Activity</string>
+</resources>
