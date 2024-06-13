@@ -5,115 +5,60 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class HeroStats {
-    @SerializedName("id")
     private int id;
-    @SerializedName("name")
     private String name;
-    @SerializedName("localized_name")
-    private String localizedName;
-    @SerializedName("primary_attr")
+    private String localized_name;
     private String primaryAttr;
-    @SerializedName("attack_type")
     private String attackType;
-    @SerializedName("roles")
     private List<String> roles;
-    @SerializedName("img")
     private String img;
-    @SerializedName("icon")
     private String icon;
-    @SerializedName("base_health")
     private int baseHealth;
-    @SerializedName("base_health_regen")
     private double baseHealthRegen;
-    @SerializedName("base_mana")
     private int baseMana;
-    @SerializedName("base_mana_regen")
     private double baseManaRegen;
-    @SerializedName("base_armor")
     private double baseArmor;
-    @SerializedName("base_mr")
     private int baseMr;
-    @SerializedName("base_attack_min")
     private int baseAttackMin;
-    @SerializedName("base_attack_max")
     private int baseAttackMax;
-    @SerializedName("base_str")
     private int baseStr;
-    @SerializedName("base_agi")
     private int baseAgi;
-    @SerializedName("base_int")
     private int baseInt;
-    @SerializedName("str_gain")
     private double strGain;
-    @SerializedName("agi_gain")
     private double agiGain;
-    @SerializedName("int_gain")
     private double intGain;
-    @SerializedName("attack_range")
     private int attackRange;
-    @SerializedName("projectile_speed")
     private int projectileSpeed;
-    @SerializedName("attack_rate")
     private double attackRate;
-    @SerializedName("base_attack_time")
     private double baseAttackTime;
-    @SerializedName("attack_point")
     private double attackPoint;
-    @SerializedName("move_speed")
     private int moveSpeed;
-    @SerializedName("turn_rate")
     private double turnRate;
-    @SerializedName("cm_enabled")
     private boolean cmEnabled;
-    @SerializedName("legs")
     private int legs;
-    @SerializedName("day_vision")
     private int dayVision;
-    @SerializedName("night_vision")
     private int nightVision;
-    @SerializedName("hero_id")
     private int heroId;
-    @SerializedName("turbo_picks")
     private int turboPicks;
-    @SerializedName("turbo_wins")
     private int turboWins;
-    @SerializedName("pro_ban")
     private int proBan;
-    @SerializedName("pro_win")
     private int proWin;
-    @SerializedName("pro_pick")
     private int proPick;
-    @SerializedName("1_pick")
     private int pick1;
-    @SerializedName("1_win")
     private int win1;
-    @SerializedName("2_pick")
     private int pick2;
-    @SerializedName("2_win")
     private int win2;
-    @SerializedName("3_pick")
     private int pick3;
-    @SerializedName("3_win")
     private int win3;
-    @SerializedName("4_pick")
     private int pick4;
-    @SerializedName("4_win")
     private int win4;
-    @SerializedName("5_pick")
     private int pick5;
-    @SerializedName("5_win")
     private int win5;
-    @SerializedName("6_pick")
     private int pick6;
-    @SerializedName("6_win")
     private int win6;
-    @SerializedName("7_pick")
     private int pick7;
-    @SerializedName("7_win")
     private int win7;
-    @SerializedName("8_pick")
     private int pick8;
-    @SerializedName("8_win")
     private int win8;
 
     public int getId() {
@@ -133,11 +78,11 @@ public class HeroStats {
     }
 
     public String getLocalizedName() {
-        return localizedName;
+        return localized_name;
     }
 
-    public void setLocalizedName(String localizedName) {
-        this.localizedName = localizedName;
+    public void setLocalizedName(String localized_name) {
+        this.localized_name = localized_name;
     }
 
     public String getPrimaryAttr() {
@@ -556,6 +501,123 @@ public class HeroStats {
         this.win8 = win8;
     }
 
+    @Override
+    public String toString() {
+        return "HeroStats{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", localized_name='" + localized_name + '\'' +
+                ", primaryAttr='" + primaryAttr + '\'' +
+                ", attackType='" + attackType + '\'' +
+                ", roles=" + roles +
+                ", img='" + img + '\'' +
+                ", icon='" + icon + '\'' +
+                ", baseHealth=" + baseHealth +
+                ", baseHealthRegen=" + baseHealthRegen +
+                ", baseMana=" + baseMana +
+                ", baseManaRegen=" + baseManaRegen +
+                ", baseArmor=" + baseArmor +
+                ", baseMr=" + baseMr +
+                ", baseAttackMin=" + baseAttackMin +
+                ", baseAttackMax=" + baseAttackMax +
+                ", baseStr=" + baseStr +
+                ", baseAgi=" + baseAgi +
+                ", baseInt=" + baseInt +
+                ", strGain=" + strGain +
+                ", agiGain=" + agiGain +
+                ", intGain=" + intGain +
+                ", attackRange=" + attackRange +
+                ", projectileSpeed=" + projectileSpeed +
+                ", attackRate=" + attackRate +
+                ", baseAttackTime=" + baseAttackTime +
+                ", attackPoint=" + attackPoint +
+                ", moveSpeed=" + moveSpeed +
+                ", turnRate=" + turnRate +
+                ", cmEnabled=" + cmEnabled +
+                ", legs=" + legs +
+                ", dayVision=" + dayVision +
+                ", nightVision=" + nightVision +
+                ", heroId=" + heroId +
+                ", turboPicks=" + turboPicks +
+                ", turboWins=" + turboWins +
+                ", proBan=" + proBan +
+                ", proWin=" + proWin +
+                ", proPick=" + proPick +
+                ", pick1=" + pick1 +
+                ", win1=" + win1 +
+                ", pick2=" + pick2 +
+                ", win2=" + win2 +
+                ", pick3=" + pick3 +
+                ", win3=" + win3 +
+                ", pick4=" + pick4 +
+                ", win4=" + win4 +
+                ", pick5=" + pick5 +
+                ", win5=" + win5 +
+                ", pick6=" + pick6 +
+                ", win6=" + win6 +
+                ", pick7=" + pick7 +
+                ", win7=" + win7 +
+                ", pick8=" + pick8 +
+                ", win8=" + win8 +
+                '}';
+    }
 
+    public HeroStats(int id, String name, String localized_name, String primaryAttr, String attackType, List<String> roles, String img, String icon, int baseHealth, double baseHealthRegen, int baseMana, double baseManaRegen, double baseArmor, int baseMr, int baseAttackMin, int baseAttackMax, int baseStr, int baseAgi, int baseInt, double strGain, double agiGain, double intGain, int attackRange, int projectileSpeed, double attackRate, double baseAttackTime, double attackPoint, int moveSpeed, double turnRate, boolean cmEnabled, int legs, int dayVision, int nightVision, int heroId, int turboPicks, int turboWins, int proBan, int proWin, int proPick, int pick1, int win1, int pick2, int win2, int pick3, int win3, int pick4, int win4, int pick5, int win5, int pick6, int win6, int pick7, int win7, int pick8, int win8) {
+        this.id = id;
+        this.name = name;
+        this.localized_name = localized_name;
+        this.primaryAttr = primaryAttr;
+        this.attackType = attackType;
+        this.roles = roles;
+        this.img = img;
+        this.icon = icon;
+        this.baseHealth = baseHealth;
+        this.baseHealthRegen = baseHealthRegen;
+        this.baseMana = baseMana;
+        this.baseManaRegen = baseManaRegen;
+        this.baseArmor = baseArmor;
+        this.baseMr = baseMr;
+        this.baseAttackMin = baseAttackMin;
+        this.baseAttackMax = baseAttackMax;
+        this.baseStr = baseStr;
+        this.baseAgi = baseAgi;
+        this.baseInt = baseInt;
+        this.strGain = strGain;
+        this.agiGain = agiGain;
+        this.intGain = intGain;
+        this.attackRange = attackRange;
+        this.projectileSpeed = projectileSpeed;
+        this.attackRate = attackRate;
+        this.baseAttackTime = baseAttackTime;
+        this.attackPoint = attackPoint;
+        this.moveSpeed = moveSpeed;
+        this.turnRate = turnRate;
+        this.cmEnabled = cmEnabled;
+        this.legs = legs;
+        this.dayVision = dayVision;
+        this.nightVision = nightVision;
+        this.heroId = heroId;
+        this.turboPicks = turboPicks;
+        this.turboWins = turboWins;
+        this.proBan = proBan;
+        this.proWin = proWin;
+        this.proPick = proPick;
+        this.pick1 = pick1;
+        this.win1 = win1;
+        this.pick2 = pick2;
+        this.win2 = win2;
+        this.pick3 = pick3;
+        this.win3 = win3;
+        this.pick4 = pick4;
+        this.win4 = win4;
+        this.pick5 = pick5;
+        this.win5 = win5;
+        this.pick6 = pick6;
+        this.win6 = win6;
+        this.pick7 = pick7;
+        this.win7 = win7;
+        this.pick8 = pick8;
+        this.win8 = win8;
+    }
 
 }

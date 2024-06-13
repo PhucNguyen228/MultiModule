@@ -1,4 +1,8 @@
 <resources>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello this is module 2</string>
+    <string name="detail_hero_activity">Hero Stats Activity</string>
+    <string name="pro_win">Pro Win</string>
+    <string name="turbo_wins">Turbo Wins</string>
+    <string name="name_hero">Name hero</string>
 </resources>

@@ -30,13 +30,26 @@ android {
 
 dependencies {
 
+    implementation(libs.recyclerview)
+    implementation(libs.glide)
+    implementation(libs.glideCompiler)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.navigationFragment)
     implementation(libs.navigationUI)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(project(":network"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // retrofit
+    implementation(libs.retrofit)
+    implementation(libs.retrofitGson)
+    // okhttp and logging interceptor
+    implementation(libs.okhttp)
+    implementation(libs.loggingInterceptor)
+    // gson
+    implementation(libs.gson)
 }
